@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: #333333;
+    height: 60px;
+}
+nav .logo{
+    font-size: larger;
+    color: rgba(255, 255, 255, 0.75);
+} 
+nav .list ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.75);
+
+}
+nav ul li{
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.75);
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.pages{
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.home{
+    background-image: linear-gradient(rgba(92, 77, 66, 0.8) 0px, rgba(92, 77, 66, 0.8) 100%), url(../challenge-2/images/home-image.jpg);
+    background-color: linear-gradient(rgba(92, 77, 66, 0.8) 0px, rgba(92, 77, 66, 0.8) 100%);
+    background-position: center;
+    
+}
+.home .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.content-1{
+    margin: 30px;
+    
+}
+.home .container .content-1 h2{
+    color: white;
+    font-size: 3.20rem;
+    padding-bottom: 20px;
+}
+.line{
+    width: 3.25rem;
+    margin-left: 340px;
+    border: 2px solid rgb(244, 98, 58);
+}
+.home .container .content-2 p{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.15rem;
+    margin-bottom: 65px;
+    text-align: center;
+}
+.home .container .content-2 a{
+    height: 80px;
+    width: 100px;
+    border-radius: 9999999px;
+    padding: 15px 40px;
+    background-color: rgb(244, 98, 58);
+    border: none;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+}
+.home .content-2 a:hover{
+    background-color: #f55c36;
+}
+#about{
+    background-color: rgb(244, 98, 58);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about .container-2{
+    text-align: center;
+    width: 100%;
+}
+#about .heading{
+    font-size: 1.95rem;
+    color: white;
+    margin-bottom: 25px;
+}
+#about hr{
+    width: 3.25rem;
+    margin: 0 auto 25px auto;
+    border: 2px solid white;
+}
+#about p{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.00rem;
+    margin-bottom: 25px;
+    text-align: center;
+
+}
+.button{
+    height: 60px;
+    width: 190px;
+    border-radius: 9999999px;
+    padding: 15px 40px;
+    background-color: white;
+    border: none;
+    color: rgb(52, 58, 64);
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+    font-size: 0.90rem;
+}
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+#services{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services .heading-2{
+    font-size: 1.95rem;
+    color: black;
+    margin-bottom: 20px;
+}
+.lines{
+    width: 3.25rem;
+    border: 2px solid rgb(244, 98, 58);
+    margin-bottom: 60px;
+}
+#services .wrap{
+    height: 60px;
+    width:auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+#services .wrap-icon{
+    width: 300px;
+}
+#services .wrap .wrap-icon i{
+    color: rgb(244, 98, 58);
+    font-size: 3.70rem;
+    margin-left: 100px;
+    margin-bottom: 25px;
+
+}
+#services .wrap-icon .first-p{
+    font-size: 1.4rem;
+    margin-bottom: 17px;
+    text-align: center;
+}
+#services .wrap .wrap-icon .second-p{
+    color: #6c757d;
+    font-size: 1.1rem;
+    text-align: center;
+}
+#portfolio{
+    width: 100%;
+    height: 149vh;
+}
+#portfolio .images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 110px;
+}
+.images .imgg{
+    vertical-align: middle;
+    border-style:none;
+    margin-top: -4px;
+    width: calc(100%/3);
+}
+#portfolio .images-below{
+    background-color: rgb(52, 58, 64);
+    width: 100%;
+    height: 60vh;
+    margin-top: -3.5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio .images-below p{
+    color: white;
+    font-size: 1.65rem;
+    margin-bottom: 20px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+#contact .one{
+    color: #212529;
+    font-size: 1.65rem;
+    margin-bottom: 25px;
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
+#contact .two{
+    color: #6c757d !important ;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: -20px;
+}
+#contact .contact-div{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly ;
+    margin-top: 50px;
+}
+#contact .contact-div i{
+    font-size: 2.75rem;
+    color:#6c757d ;
+    padding-left: 50px;
+    margin-bottom: 25px;
+}
+#contact .contact-div a{
+    color: #f55c36;
+    text-decoration: none;
+}
+#contact .contact-div a:hover{
+    text-decoration: underline;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #f0efef;
+    text-align: center;
+    color: #6c757d;
+    padding-top: 25px;
+    /* font-size: ; */
+}
+/* footer div{
+    margin-top: 12px;
+    height: auto;
+    width: auto;
+} */
